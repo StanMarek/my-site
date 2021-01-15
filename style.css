@@ -1,13 +1,92 @@
+html{
+    /*background: linear-gradient(black, grey);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;*/
+    /*background-image: url(Files/css-dark-chain-background.png);*/
+    background: #222222;
+    text-align: center;
+}
+
 h3{
     color: antiquewhite;
 }
 
+.fa-facebook-square{
+    color: blue;
+}
+.fa-twitter-square{
+    color: dodgerblue;
+}
+.fa-github-square{
+    color: black;
+}
+.fa-instagram{
+    color: white;
+}
 #body{
-    background-color: #1D1C1C;
+
+    color: white;
     font-family: 'Aldrich', sans-serif;
     font-size: 18px;
 }
-
-.SocialHref{
+.Socials {
+    text-align: center;
+    max-width: 150px;
+    list-style-type: none;
+    overflow: hidden;
+    background: #222222;
+    margin: auto;
+}
+.Socials li a{
     color: yellow;
+    text-decoration: none;
+    display: block;
+    float: bottom;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.Socials li a:hover{
+    background: #111111;
+    transform: scale(1.25,1.25);
+    animation: SocialAnimation linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+li a{
+    text-decoration: none;
+}
+
+h3 a {
+    text-decoration: none;
+}
+
+a{
+    decoration: none;
+}
+
+#ChadFace:hover{
+    animation: ChadFaceAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.Socials:hover{
+
+}
+
+@keyframes ChadFaceAnimation {
+    50%{transform: scale(1.15, 1.15)}
+}
+
+@keyframes SocialAnimation {
+    0%{color: yellow}
+    20%{color: orange}
+    40%{color: red}
+    60%{color: purple}
+    80%{color: blue}
+    100%{color: green}
 }
